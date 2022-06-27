@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { BlockCode } from "../components/BlockCode";
 import { Logo } from "../components/Logo";
 import { useCreateSubscribeMutation } from "../graphql/generated";
 
@@ -70,8 +71,7 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-
-      <img src="/src/assets/code-block.png" alt="" />
+      <BlockCode />
     </div>
   );
 }
